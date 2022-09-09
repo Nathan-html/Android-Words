@@ -27,6 +27,7 @@ import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wordsapp.DetailActivity
 import com.example.wordsapp.DetailActivity.Companion.LETTER
+import com.example.wordsapp.DetailActivity.Companion.LOG_TAG
 import com.example.wordsapp.R
 
 /**
@@ -66,7 +67,7 @@ class LetterAdapter :
         val item = list[position]
         holder.button.text = item.toString()
         holder.button.setOnClickListener {
-            Log.d("Nathan-html", "${holder.button.text} was clicked");
+            Log.d(LOG_TAG, "${holder.button.text} was clicked");
             val context = holder.view.context
             val intent = Intent(context, DetailActivity::class.java)
             intent.putExtra(LETTER, holder.button.text.toString())
