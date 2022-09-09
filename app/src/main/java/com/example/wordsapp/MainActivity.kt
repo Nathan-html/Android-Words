@@ -19,6 +19,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.wordsapp.adapter.LetterAdapter
 import com.example.wordsapp.databinding.ActivityMainBinding
 
 /**
